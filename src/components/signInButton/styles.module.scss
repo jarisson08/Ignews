@@ -1,0 +1,38 @@
+.signInButton{
+   
+    //width: 218px;
+    background: var(--gray-850);
+    height: 3rem;
+    border-radius: 3rem;//se tem memso tamanho do height fica o + arredondado possível
+    border: 0;
+    padding: 0 1.5rem;//vertical 0, horizontal 1.5rem
+    justify-content: center;
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+
+    svg{
+        width: 20px;
+        height: 20px;
+        display: flex;  
+        
+    }
+
+    svg:first-child{
+        margin-right: 1rem;//ta nesse pq dps vai ter o botão de fechar, poderia ta no svg acima
+    }
+
+    svg.closeIcon{
+       margin-left: 1rem;
+    }
+
+    transition: filter 0.2s;
+
+    &:hover{
+        filter: brightness(0.8);
+    }
+}
